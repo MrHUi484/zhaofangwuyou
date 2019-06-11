@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <title>找房无忧-二手房详情页</title>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/secondHandDetail.css"/>
+    <link rel="stylesheet" href="css/swiper-4.1.6.min.css">
+</head>
+<body>
+<!--头部-->
+<header>
+    <h1><a href="#"><img src="image/index/logo.jpg" alt=""/></a></h1>
+
+    <div class="icon">
+        <a href="#"><img src="image/index/my.jpg" alt=""/></a>
+        <a href="#"><img src="image/index/xiazai.jpg" alt=""/></a>
+    </div>
+</header>
+<!--大图-->
+
+<!--轮播图和主要房源信息-->
+<section class="content1">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="image/secondhandlist/img.png" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="image/secondhandlist/img.png" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="image/secondhandlist/img.png" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="image/secondhandlist/img.png" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="image/secondhandlist/img.png" alt=""/></a></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination">
+            <span>1</span>
+            /
+            <span></span>
+        </div>
+        <!--地图-->
+        <div class="aa">
+            <p>地图</p>
+        </div>
+    </div>
+    <div class="mianText">
+        <h2>天鹅湾小区精装两居，满五唯一，业主换房急售</h2>
+        <p><span>576 </span>万元 (单价：46327元/平)</p>
+        <p>挂牌时间2015年6月20日</p>
+        <p><span>学区房</span><span>独家</span><span>满五唯一</span></p>
+    </div>
+</section>
+<!--户型-->
+<section class="content2">
+    <ul>
+        <li>
+            <div><span>户型：</span><span>3室2厅</span></div>
+            <div><span>面积：</span><span>100平</span></div>
+        </li>
+        <li>
+            <div><span>楼层：</span><span>中楼层</span></div>
+            <div><span>朝向：</span><span>西南</span></div>
+        </li>
+        <li>
+            <div><span>装修：</span><span>精装</span></div>
+            <div><span>楼型：</span><span>塔楼</span></div>
+        </li>
+        <li>
+            <div><span>年代：</span><span>2004年</span></div>
+            <div><span>区域：</span><span>西二旗</span></div>
+        </li>
+        <li>
+            <div><span>首付：</span><span>123万</span></div>
+            <div><span>月供：</span><span>15683元</span></div>
+        </li>
+        <li>地铁：离西二旗地铁站800米</li>
+        <li>小区：珠江帝景</li>
+        <li>学校：北京市第二实验小学</li>
+        <li>更多房源信息</li>
+    </ul>
+</section>
+<!--房源特色-->
+<section class="content3">
+    <h2>房源特色</h2>
+    <p>
+        小区环境优雅，虽处闹市中（小区南200米有美廉美超市、西30米有华联商场、星美国际影城、东北角就是大中电器、
+        小区东100米有汇佳幼儿园、昌平实验一小，昆泰国际大酒...
+    </p>
+    <p>更多特色</p>
+</section>
+
+<section class="content4">
+    <h2>户型分间</h2>
+    <ul>
+        <li>
+            <div class="left">
+                <img src="image/secondhandlist/img4.png" alt=""/>
+            </div>
+            <div class="right">
+                <h2>当前格局</h2>
+                <p>分间信息：客厅25平米，南北通透</p>
+                <p><span>南北通透</span><span>全明格局</span></p>
+            </div>
+        </li>
+        <li>
+            <div class="left">
+                <img src="image/secondhandlist/img5.png" alt=""/>
+            </div>
+            <div class="right">
+                <h2>当前格局</h2>
+                <p>分间信息：客厅25平米，南北通透</p>
+                <p><span>南北通透</span><span>全明格局</span></p>
+            </div>
+        </li>
+    </ul>
+</section>
+<!--对口学校-->
+<section class="content5">
+    <h2>对口学校</h2>
+    <ul>
+        <li><span>学校名称：</span>北京市第二实验小学</li>
+        <li><span>升学方式：</span>直升、派位</li>
+        <li><span>对口中学：</span>团结湖中学</li>
+        <li><span>划片小区：</span>3个划片小区 在售房源150套</li>
+        <li><span>学校特色：</span>包食宿、有校车</li>
+        <li><a href="#">查看学校详情</a></li>
+    </ul>
+</section>
+<!--位置及周边-->
+<section class="content6">
+    <h2>位置及周边</h2>
+    <!--百度地图容器-->
+    <div style="width:100%;height:250px;border:#ccc solid 1px;" id="dituContent"></div>
+</section>
+
+<section class="content7">
+    <h2>推荐房源</h2>
+    <ul class="houseList">
+        <li>
+            <div class="img"><img src="image/secondhandlist/img6.png" alt=""/></div>
+            <div class="text">
+                <h3>文化部中间层 一层带阁楼</h3>
+                <p>2室1厅96㎡南北 <strong>1105万</strong></p>
+                <p>红庙北里 <span>14268元/平</span></p>
+                <p>
+                    <a href="#">学区房</a>
+                </p>
+            </div>
+            <p class="tips"><span></span>推荐理由：同户型、通风好、采光好</p>
+        </li>
+        <li>
+            <div class="img"><img src="image/secondhandlist/img7.png" alt=""/></div>
+            <div class="text">
+                <h3>光大水墨 精装复式 稀缺</h3>
+                <p>2室1厅96㎡南北 <strong>280万</strong></p>
+                <p>光大水墨 <span>14268元/平</span></p>
+                <p>
+                    <a href="#">学区房</a>
+                </p>
+            </div>
+            <p class="tips"><span></span>推荐理由：同户型、通风好、采光好</p>
+        </li>
+    </ul>
+    <p class="more"><a href="#">查看更多相似房源</a></p>
+</section>
+<!--版权底部-->
+<footer class="copyright">
+    <h2>北京找房无忧 > 首页</h2>
+    <div class="content">
+        <ul>
+            <li>
+                <img src="image/index/apple.png" alt=""/>
+                <div>
+                    <p>iPhone</p>
+                    <p>客户端</p>
+                </div>
+            </li>
+            <li>
+                <img src="image/index/android.png" alt=""/>
+                <div>
+                    <p>Android</p>
+                    <p>客户端</p>
+                </div>
+            </li>
+        </ul>
+        <div class="text">
+            <p>北京找房无忧房地产经纪公司</p>
+            <p>网络经营许可证京ICP备20160812号</p>
+        </div>
+    </div>
+</footer>
+
+<section class="agent">
+    <a href="#">联系经纪人</a>
+    <a href="#">关注</a>
+</section>
+<script src="js/rem.js"></script>
+<script src="js/swiper-4.1.6.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal', // 垂直切换选项
+        loop: true, // 循环模式选项
+
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+            formatFractionCurrent: function (number) {
+                switch (number) {
+                    case 1:
+                        myNum = '1'
+                        break;
+                    case 2:
+                        myNum = '2'
+                        break;
+                    case 3:
+                        myNum = '3'
+                        break;
+                    case 4:
+                        myNum = '4'
+                        break;
+                    case 5:
+                        myNum = '5'
+                        break;
+                    default:
+                        myNum = number
+                }
+                return myNum;
+            },
+        },
+    })
+</script>
+</body>
+</html>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        // addMarker();//向地图中添加marker
+    }
+
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        map.centerAndZoom(new BMap.Point(116.404, 39.915), 11); //定义一个中心点坐标
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+
+    // //创建marker
+    // function addMarker(){
+    //     for(var i=0;i<markerArr.length;i++){
+    //         var json = markerArr[i];
+    //         var p0 = json.point.split("|")[0];
+    //         var p1 = json.point.split("|")[1];
+    //         var point = new BMap.Point(p0,p1);
+    //         var iconImg = createIcon(json.icon);
+    //         var marker = new BMap.Marker(point,{icon:iconImg});
+    //         var iw = createInfoWindow(i);
+    //         var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+    //         marker.setLabel(label);
+    //         map.addOverlay(marker);
+    //         label.setStyle({
+    //             borderColor:"#808080",
+    //             color:"#333",
+    //             cursor:"pointer"
+    //         });
+    //
+    //         (function(){
+    //             var index = i;
+    //             var _iw = createInfoWindow(i);
+    //             var _marker = marker;
+    //             _marker.addEventListener("click",function(){
+    //                 this.openInfoWindow(_iw);
+    //             });
+    //             _iw.addEventListener("open",function(){
+    //                 _marker.getLabel().hide();
+    //             })
+    //             _iw.addEventListener("close",function(){
+    //                 _marker.getLabel().show();
+    //             })
+    //             label.addEventListener("click",function(){
+    //                 _marker.openInfoWindow(_iw);
+    //             })
+    //             if(!!json.isOpen){
+    //                 label.hide();
+    //                 _marker.openInfoWindow(_iw);
+    //             }
+    //         })()
+    //     }
+    // }
+    // //创建InfoWindow
+    // function createInfoWindow(i){
+    //     var json = markerArr[i];
+    //     var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+    //     return iw;
+    // }
+    // //创建一个Icon
+    // function createIcon(json){
+    //     var icon = new BMap.Icon("http://map.baidu.com/image/us_cursor.gif", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+    //     return icon;
+    // }
+
+    initMap();//创建和初始化地图
+</script>
